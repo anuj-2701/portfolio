@@ -1,0 +1,157 @@
+/* wall color  #f8f0e1 */
+/* bg color #36dcff */
+/* grey color #343a40 */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/* -------------------header -------------------------*/
+header {
+    background-color : white;
+    height : 10vh;
+    display: flex;
+}
+
+.logo-div{
+    align-self: center;
+    margin-left: 1%;
+    
+}
+
+.logo{
+    height: 7vh;
+}
+
+nav{
+    background-color: white;
+    display:flex;
+    align-self:center;
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+nav div{
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    display: block;
+    
+    align-self: center;
+    padding: 0.1rem 0.6rem; 
+    border-radius: 20%;
+    /* background-color: white; */
+
+}
+
+nav div p{
+    padding : 0.5rem;
+}
+
+nav div p:hover{
+    box-shadow: #36dcff 0px -50px 36px -28px inset;
+}
+
+
+.darkmode{
+    height: 4vh;
+    margin-top: 0.31rem;
+}
+
+.darkmode-div{
+    border-radius: 50%;
+    border-style:double;
+}
+
+
+.lightmode{
+    height: 4.5vh;
+}
+
+.hero{
+    background-color: white;
+    height : 90vh;
+    display: flex;
+    
+}
+
+
+.intro{
+    padding: 10vw;
+    padding-top: 15vw;
+    display: flex;
+    flex-direction:column;
+    max-width: 40vw;
+    max-height: 40vh;
+    padding-right: 0;
+    /* color: white; */
+}
+
+.name{
+    font-size: 5rem;
+    /* max-height: 15vh; */
+    align-self: center;
+    color: #36dcff;
+}
+
+
+.job{
+    align-self: center;
+    font-size: 2rem;
+}
+
+.greeting{
+    align-self: center;
+    font-size: 2.5rem;
+    
+}
+
+.quote{
+    margin-top: auto;
+    /* color: #36dcff; */
+    font-size: 2rem;
+}
+
+.photo{
+    height: 90vh;
+    width: 39vw;
+    
+
+}
+
+.social{
+    background-color: #f8f0e1;
+    max-width :60px; /*4vw */
+    max-height: 400px; 
+    align-self: center;
+    margin-left: auto;
+    position: fixed;
+}
+
+
+.social div img{
+    width: 60px;
+    
+}
+
+
+.about{
+    margin: 10vh 0vh;
+
+    background-color: yellow;
+    height: 50vh;
+    
+
+}
+
+
+.skills{
+    background-color: yellowgreen;
+    height: 100vh;
+
+}
