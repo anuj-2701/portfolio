@@ -1,0 +1,518 @@
+/* wall color  #f8f0e1 */
+/* blue color #36dcff */
+/* grey color #343a40 */
+/* background grey color #F5F5F5 */
+/* dark mode background #121212 */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth; /*doesn't work in safari */
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.container{
+    width: 75vw;
+    margin: auto;
+}
+
+/* ------------------- header -------------------------*/
+
+.temp{
+    height: 10vh;
+}
+
+header {
+    background-color : white;
+    height : 10vh;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;  /*so that header overlaps every element */
+    box-shadow:0 1.2rem 3.2rem rgba(0,0,0,0.1);
+}
+
+
+
+.logo-div{
+    align-self: center;
+    margin-left: 1%;
+    
+}
+
+.logo{
+    height: 7vh;
+}
+
+nav{
+    /* background-color: white; */
+    display:flex;
+    align-self:center;
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+nav div{
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    display: block;
+    
+    align-self: center;
+    padding: 0.1rem 0.6rem; 
+    border-radius: 20%;
+
+}
+
+nav div a{
+    padding : 0.5rem;
+    transition: 0.2s;
+    opacity: 0.5;
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav div a:active{
+    color: #36dcff;
+}
+
+nav div a:visited{
+    color:inherit;
+}
+
+nav div a:hover{
+    /* box-shadow: #36dcff 0px -50px 36px -28px inset; */
+    color: #36dcff;
+    opacity: 1;
+    /* font-size: 1.8rem; */
+}
+
+
+
+.darkmode-logo{
+    height: 4vh;
+    margin-top: 0.31rem;
+    
+}
+
+.darkmode-div{
+    border-radius: 50%;
+    border-style:double;
+    padding: 0.5vh 1vh;
+}
+
+/* ------------------------------- Hero section ------------------------------ */
+
+
+.hero{
+    
+    height : 90vh;
+    display: flex;
+    /* margin-top: 10vh;     WORKS PROPERLY WITHOUT THE TEMP DIV */
+    
+    
+
+}
+
+
+.intro{
+    
+    padding-top: 15vw;
+
+    display: flex;
+    flex-direction:column;
+
+    width: 40vw;
+    height: 40vh;
+    
+    /* color: white; */
+}
+
+.name{
+    font-size: 5rem;
+    /* max-height: 15vh; */
+    align-self: center;
+    color: #36dcff;
+}
+
+
+#element{
+    align-self: center;
+    font-size: 2rem;
+}
+
+.greeting{
+    align-self: center;
+    font-size: 2.5rem;
+    
+}
+
+.tags{
+    font-size: 2rem;
+    
+}
+
+.quote{
+    margin-top: auto;
+    /* color: #36dcff; */
+    font-size: 2rem;
+    padding: 1vh 0;
+    margin: 0vh 0;
+
+
+}
+
+.quote--div{
+    /* background-color: #9befff; */
+    margin: 5vh 0;
+    padding: 2vh;
+
+    text-align: center;
+    
+    border-radius: 15px; 
+}
+
+.photo{
+    height: 90vh;
+    width: 39vw;
+
+}
+.photo-div{
+    margin: auto;
+}
+
+.social{
+    background-color: #f8f0e1;
+    max-width :60px; /*4vw */
+    max-height: 400px; 
+    align-self: center;
+    margin-left: auto;
+    position: fixed;
+}
+
+
+.social div img{
+    width: 60px;
+    
+}
+
+/* ----------------------------- About ------------------------------ */
+
+.about{
+    /* background-color: #9befff; */
+    
+    
+    
+    height: 70vh;
+    padding-top: 10vh; /* for about me to be visible on scroll */
+    margin-top: 5vh; /* for white space */
+    display: block;
+    /* border-style: double;
+    border-radius: 12px; */
+
+}
+
+.about--heading{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1vh;
+    position: relative;
+}
+
+.about--heading::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 120px;
+    background-color: #36dcff;
+}
+
+.about--content{
+    display: flex;
+    width: inherit;
+    margin-top: 5vh;
+    border-radius: 15px;
+}
+
+.about--text {
+    font-size: 1.5rem;
+    margin-top: 5vh;
+    opacity: 0.8;
+    margin-left: 0vw;
+}
+
+.about li{
+    margin: 1vh;
+    list-style: none;
+}
+
+
+.text--cv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+}
+
+.my--photo{
+    width: 20vw;
+    margin: 5vh ;
+    margin-right: 5vw;
+
+}
+
+.dowload-button-div{
+    
+}
+
+.download-cv-button{
+    background-color: #36dcff;
+
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+
+    border-style: none;
+
+    margin-top: 8vh;
+    margin-left: 8vw;
+
+}
+
+.download-cv-button:hover{
+    background-color: #9befff;
+}
+
+.download-icon{
+    width: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+/* --------------------------- Skills ------------------------------ */
+
+.skills{
+    height: 50vh;
+    padding-top: 10vh; /*so that the "skills" text is visible after scroll */
+    margin-top: 5vh;
+
+
+}
+
+
+.skills--heading{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1vh;
+    position: relative;
+}
+
+.skills--heading:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 60px;
+    background-color: #36dcff;
+}
+
+
+.skills-box{
+    padding-top: 0;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5vw;
+    
+}
+
+.skill{
+    /* background-color: #36dcff; */
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 8vw;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    margin: auto;
+    text-align: center;
+
+}
+
+.skill-icon{
+    width: 5vw;
+}
+
+.c-logo{
+    width: 4.5vw;
+}
+
+.skill-name{
+    margin: 2vh 1vw;
+    
+}
+
+/* --------------------------------- Projects ---------------------------- */
+
+.projects{
+    height: 90vh;
+    padding-top: 10vh;  /*so that the "skills" text is visible after scroll */
+    margin-top: 5vh;
+    
+}
+
+.projects--heading{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1vh;
+    position: relative;
+}
+
+.projects--heading:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #36dcff;
+}
+
+.grid-3-cols{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+}
+
+.project{
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 21vw;
+    height: 52vh;
+    margin: auto;
+}
+
+.project img{
+    width: 21vw;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.project-content{
+    padding: 32px
+}
+
+.project-title{
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0.1rem 0;
+    background-color: lightgray;
+}
+
+.project-details{
+    align-items: center;
+}
+
+.bank-thumbnail{
+    height: 21vh;
+}
+
+.view-button{
+    background-color: #36dcff;
+
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    border-style: none;
+
+    margin-top: 5vh;
+    margin-left: 6.5vw;
+    
+    
+}
+
+.view-button:hover{
+    background-color: #9befff;
+}
+
+.eye-icon{
+    
+}
+
+/* ----------------------------------- Contact ------------------------------------ */
+
+.contact{
+    height: 30vh;
+    /* background-color: lightgray; */
+    
+}
+
+
+.contact-heading{
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.contact-heading::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 120px;
+    background-color: #36dcff;
+}
+
+.icons{
+    
+    text-align: center;
+    display: flex;
+
+    width: fit-content;
+    margin: auto;
+
+    padding: 1.5vh 0;
+    border-radius: 15px;
+}
+
+
+
+.social-icon{
+    width: 3rem;
+    margin: 0 1rem;
+}
+
+
+
+.solid{
+    display: none;
+}
+
+
+/* -------------------- Dark Mode --------------------------- */
+
+.dark{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-elevated{
+    background-color: #232323;
+}
